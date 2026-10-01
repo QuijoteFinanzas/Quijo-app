@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#102d2d">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Quijo">
+<meta name="robots" content="noindex,nofollow">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-src 'none'">
+<title>Quijo | Tu patrimonio, en perspectiva</title>
+<link rel="icon" href="./assets/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="./assets/apple-touch-icon.png">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="stylesheet" href="./style.css">
+<script src="./importer.js" defer></script>
+<script src="./vault.js" defer></script>
+<script src="./model.js" defer></script>
+<script src="./app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Ir al contenido</a>
+<div id="app"></div>
+<dialog id="sheet" aria-labelledby="dialog-title"><div id="sheet-content"></div></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+<div id="screen-shield" hidden><img src="./assets/icon.svg" alt="Quijo" width="60" height="60"><p>Quijo est&aacute; en segundo plano</p></div>
+<input id="import-file" type="file" accept=".xlsx,.json" hidden>
+<noscript><p>Activa JavaScript para leer el Excel en tu dispositivo. No se env&iacute;an tus datos a un servidor.</p></noscript>
+</body>
+</html>
