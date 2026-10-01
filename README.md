@@ -1,6 +1,13 @@
-# Quijo Finanzas - V1.1
+# Quijo Finanzas V1.3
+
+Paquete completo de la app vacia. Consulta `ACTUALIZAR.md` para actualizar y `MEJORAS.md` para el alcance completo y las pruebas. No incluyas tus datos en el repositorio.
+
 
 Una app web para consultar la plantilla de seguimiento financiero del proyecto. El Excel sigue siendo la fuente de datos; la app es la vista y no modifica el archivo original.
+
+## Actualizar desde V1.1
+
+Lee **ACTUALIZAR.md** antes de subir los archivos. Haz una copia cifrada, conserva el mismo repositorio y la misma URL. Los nuevos modulos `insights.js` e `insights-ui.js` deben estar en la raiz. El formato de cifrado no cambia.
 
 ## Contenido
 
@@ -13,6 +20,9 @@ Una app web para consultar la plantilla de seguimiento financiero del proyecto. 
 - FIRE: escenarios configurables, no predicciones; permite excluir pensiones y dinero reservado.
 - Datos: importación revisable, colección de cierres, guardado cifrado opcional, copia y restauración, salida pública solo en porcentajes.
 - Tema claro/oscuro, ocultar importes, icono y manifiesto de app instalable.
+- Mes a mes: comparacion de fotos y diferencias de pesos; residual solo con flujos conciliados.
+- Objetivos: metas configurables con saldo vinculado o manual.
+- Benchmark: importacion de series mensuales con fuente, conciliacion de flujos, base 100 y metricas; sin datos ficticios precargados.
 
 ## MUY IMPORTANTE: que se pública y que no
 
@@ -85,7 +95,10 @@ Comprueba la vista antes de publicar. No publiques una copia privada simplemente
 - FIRE: supuestos reales, aportación al final de cada año, sin impuestos ni pensión pública. No usa una promesa de rendimiento ni presupone que un PP sea líquido de inmediato.
 - No hay benchmark, Sharpe, alfa, precios diarios inventados ni conexión bancaria/broker en esta entrega.
 
-## Pruebas de esta entrega
+## Pruebas de la base V1.1
+
+Las pruebas adicionales V1.2 y sus limites estan documentados en ACTUALIZAR.md.
+
 
 Probados con el Excel recibido: importación local, reconciliacion de totales, agrupaciones, exportacion porcentual, detalle mensual, fichas de acciones y navegación. Pruebas de interfaz Chromium a 320, 390 y 1440 px, claro/oscuro, sin errores JS en el recorrido ni solicitudes de datos externas. Pruebas de modelo y cifrado con Web Crypto real (almacen de prueba en memoria).
 
